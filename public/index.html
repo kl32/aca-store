@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text:400,400i|Roboto:400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
+        <input id="search">
+            <button onclick="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </input>
+    </div>
     
-    <input id="search">
-        <button onclick="search()">search</button>
-    </input>
     
-    <div id="productHere"></div>
+        <div id="productHere">
+                
+        </div>
 
     <script src="products.js"></script>    
     <script src="index.js"></script>   
+    <script src="https://kit.fontawesome.com/d5c9e2655e.js"></script>
 </body>
 </html>

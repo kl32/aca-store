@@ -7,12 +7,17 @@ let productDivs = "";
 for(let i=0; i < products.length; i++){
     let product = products[i];
     productDivs += 
-    `<h3>${product.name}</h3> 
-    <h4>${product.description}</h4>
-    <div>rating: ${product.rating}</div>
-    <div>price: ${product.price}</div>
-    <div>reviews: ${product.reviews.length}</div>
-    `
+    `<div class ="container">
+        <div class="product-card">
+            <div class="content">
+                <h3>${product.name}</h3>
+                <h4>${product.description}</h4>
+                rating: ${product.rating}<br>
+                price: ${product.price}<br>
+                reviews: ${product.reviews.length}<br>
+            </div>
+        </div>
+    </div>`
 }
 
 document.getElementById("productHere").innerHTML = productDivs;
@@ -26,3 +31,5 @@ function search() {
     let filteredProducts = products.filter(p=>p.name === searchWord);
     Products(filteredProducts);
 }
+
+Products(filteredProducts);
